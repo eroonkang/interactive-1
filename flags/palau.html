@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flag of Palau</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Ensures no scrolling occurs */
+  }
+
+  .flag {
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    background-color: #4AADD6; /* Light blue background */
+    display: flex;
+    align-items: center; /* Centers the moon vertically */
+    position: relative; /* Needed for absolute positioning of the moon */
+  }
+
+  .moon {
+    width: 10vw; /* Relative to viewport width */
+    height: 10vw; /* Maintains aspect ratio as a circle, based on viewport width */
+    border-radius: 50%;
+    background-color: #FFD700; /* Yellow circle */
+    position: absolute;
+    left: 45%; /* Adjust this value to move the moon to the left */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the moon perfectly */
+  }
+
+
+</style>
+</head>
+<body>
+<div class="flag">
+  <div class="moon"></div>
+</div>
+</body>
+</html>

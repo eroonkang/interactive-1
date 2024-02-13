@@ -1,0 +1,32 @@
+h1, h2, h3 {
+  font-size: 24px;
+}
+h1 {
+  color: #b764c3;
+}
+h2 {
+  color: blue;
+}
+h3 {
+  color: white;
+  background-color: blue;
+}
+p {
+  color: green;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+#finn {
+  color: red;
+}
+.cca {
+  color: purple;
+}
+.sf {
+  background-color: red;
+}
+.description p {
+  color: purple;
+}
