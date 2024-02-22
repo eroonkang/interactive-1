@@ -83,3 +83,45 @@ li {
   left: 66.64vw; /* .col width * 4 */
   top: 75vw;    /* .col height * 3 */
 }
+
+
+.poster4 .cols {
+  background: rgba(255,0,0,0.2);
+  position: absolute;
+  font-size: 48px;
+}
+.poster4 .left {
+  width: 25%;
+} 
+.poster4 .middle {
+  width: 50%;
+  left: 25%;
+}
+.poster4 .align-right {
+  text-align: right;
+}
+.poster4 .right {
+  width: 25%;
+  right: 0;
+}
+
+.poster4 p {
+  margin: 0;
+  padding-left:0.25em;
+  padding-right:0.25em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
