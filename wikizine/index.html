@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout samples for wikizine</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <p>This is a paragraph, directly under the body element.</p>
+  <p>Since all of the default HTML styling were removed by CSS Reset, there's no default margin around the body element, no default spacing between paragraphs, and no defualt padding on list items, etc. Also, no bold or italic styles for headings, strongs, or emphasis. This is our clear state to start styling the page.</p>
+  
+  <section>
+    <p>This is a paragraph inside a section element. Sections are set to have 3em vertical margins, and 20% red background-color.</p>
+    <p>Paragraphs are set to have 1em bottom margin, <em>except when the paragraph is the last child</em>. Notice how there's no margin appearing towards the top or the bottom of this section, unlike between paragraphs.</p>
+    <p>The default font-family for this body is set as Helvetica (or generic sans-serif). The browser is using the local font installed on your computer to show the letters.</p>
+    <p class="space-mono">This text appears in Space Mono using the webfont files hosted on Google Fonts.</p>
+    <p class="responder-p">This text appears in Responder P using the webfont files hosted on Adobe Fonts.</p>
+  </section>
+
+  <section>
+    <p>This is a paragraph in the second section. Do you see the 3em spacing between this section and the one above?</p>
+  </section>
+
+  <h1>Flexbox! (This is H1 but default browser style is stripped – CSS Reset)</h1>
+
+  <section class="flex">
+    <div style="background-color: yellow;">I am a flex item (a div) inside a section set as display:flex. Flex items display side-by-side within context.</div>
+    <div style="background-color: lightblue; width: 200px;">A flex item can have a width. It's also fine to write css inline. Just don't overuse it. Then it becomes messy.</div>
+    <div style="background-color: lightgreen; align-self: end;">Flex items can be aligned to the bottom of its parent.</div>
+  </section>
+
+  <section class="flex-then-wrap-with-gap">
+    <div>Many flexbox items?</div>
+    <div>You can set it to wrap.</div>
+    <div>Then they flow to next line...</div>
+    <div>... whenever necessary.</div>
+    <div>Like this.</div>
+    <div>Try chaging viewport width.</div>
+    <div>These boxes are also using Child combinator selector.</div>
+    <div>See CSS for more.</div>
+    <div>And the gap (gutter) between boxes is 1em!</div>
+  </section>
+
+  <section class="flex-space-between">
+    <div style="background-color: yellow;">Another neat flexbox trick is that you can set...</div>
+    <div style="background-color: lightblue;">... the flex items to stay as far away as possible...</div>
+    <div style="background-color: lightgreen;">... within the contect.</div>
+  </section>
+
+  <section class="flex-space-between" style="width: 800px; margin-left: auto; margin-right: auto;">
+    <div style="background-color: yellow; width: 200px;">You can also of course limit the width of the section.</div>
+    <div style="background-color: lightblue; ">This section is also set to be at the center aligned.</div>
+    <div style="background-color: lightgreen;  width: 200px;">With flex items inside.</div>
+  </section>
+
+  <h1>CSS Grid!</h1>
+
+  <section class="grid">
+    <div>This is a section set as display:grid with 4 equal columns.</div>
+    <div>The section's child elements, no matter what they are, will be displayed on this grid.</div>
+    <div>I'm a div, just like my previous ones.</div>
+    <p>I'm a paragraph</p>
+    <div>I'm the 5th child, appearing in a new line.</div>
+    <div>Then we continue on</div>
+    <div style="grid-column: span 2;">I'm a child div that takes up 2 columns.</div>
+    <div style="grid-column: 2 / 4;">I'm a child div that stars from vertical grid line 2 and ends at line 4.</div>
+  </section>
+
+  <section>
+    <p>A general suggestion for your layout is to figure things out from the big boxes to small boxes.</p>
+    <ol>
+      <li>Identify 1 or more vertically repeating content chunks in your design. Consider them sections.</li>
+      <li>Inside each section, if content boxes need to be side-by-side (columns), use grid or flexbox.</li>
+      <li>Inside those columnns, generally place items top to bottom (block elements).</li>
+      <li>Occasionally override with position: absolute and the like.</li>
+    </ol>
+  </section>
+</body>
+</html>
