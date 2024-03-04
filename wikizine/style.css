@@ -1,13 +1,14 @@
-/* Google Fonts: https://fonts.google.com/specimen/Space+Mono */
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+/* 1. Webfont @import rules */
 
-/* Adobe Fonts: https://fonts.adobe.com/fonts/responder-p */
-@import url("https://use.typekit.net/aqg2ayw.css");
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
+/* 2. CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,36 +53,38 @@ table {
   border-spacing: 0;
 }
 
-/* My CSS starts here ------------- */
+/* 3. My own styles */
 
 body {
   font-family: Helvetica, sans-serif;
 }
-.space-mono {
-  font-family: "Space Mono", sans-serif;
-}
-.responder-p {
-  font-family: "responder-p", sans-serif;;
+
+.my-google-font {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 section {
   background-color: rgba(255, 0, 0, 0.2);
   margin: 3em 0;
 }
+
 p {
-  background-color: rgba(255, 255, 0, 0.2);;
+  background-color: rgba(255, 255, 0, 0.2);
   margin-bottom: 1em;
 }
-p:last-child {
-  margin-top:0;
-}
 
+p:last-child {
+  margin-bottom:0;
+}
 
 .flex {
   display: flex;
 }
+
 .flex-then-wrap-with-gap {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -90,6 +93,7 @@ p:last-child {
   height: 150px;
   background-color: rgba(255, 0, 0, 0.2);
 }
+
 .flex-space-between {
   display: flex;
   justify-content: space-between;
@@ -101,8 +105,9 @@ p:last-child {
   gap: 1em;
 }
 .grid > div {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(255, 0, 0, 0.2);  
 }
+
 
 ol {
   list-style: lower-roman inside;
